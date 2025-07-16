@@ -21,7 +21,7 @@ function App() {
     setMessage('Sending...');
 
     try {
-      await axios.post('http://localhost:5000/api/visitor', formData);
+      await axios.post('https://1290e1da-3b5b-46d1-9e15-450f214ab681-00-1282bz5t3fybf.pike.replit.dev/send-email', formData);
       setMessage('✅ Email sent successfully!');
     } catch (error) {
       console.error(error);
